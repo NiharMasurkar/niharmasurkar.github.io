@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="NM favicon">
+  <defs>
+    <linearGradient id="nmf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F2A65A"/>
+      <stop offset="1" stop-color="#45C8B8"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="98" height="98" rx="22" fill="#0E1626"/>
+  <rect x="1.5" y="1.5" width="97" height="97" rx="21.5" fill="none" stroke="rgba(255,255,255,0.10)"/>
+  <g fill="none" stroke="url(#nmf)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16.5 66 L16.5 34 L40.5 66 L40.5 34"/>
+    <path d="M55.5 66 L55.5 34 L69.5 54 L83.5 34 L83.5 66"/>
+  </g>
+</svg>

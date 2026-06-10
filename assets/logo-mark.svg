@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="NM monogram">
+  <defs>
+    <linearGradient id="nm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F2A65A"/>
+      <stop offset="1" stop-color="#45C8B8"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#nm)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <!-- N -->
+    <path d="M33 132 L33 68 L81 132 L81 68"/>
+    <!-- M -->
+    <path d="M111 132 L111 68 L139 108 L167 68 L167 132"/>
+  </g>
+</svg>
