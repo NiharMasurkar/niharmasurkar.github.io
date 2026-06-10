@@ -1,0 +1,20 @@
+<section id="timeline">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The path</span>
+      <h2>A visual résumé</h2>
+      <p>Teal marks research and study; amber marks the milestones where a bio-inspired idea became hardware or a publication.</p>
+    </div>
+    <div class="timeline" id="timeline">
+      {% for row in site.data.timeline %}
+      <div class="tl-row{% if row.tap %} tap{% endif %}">
+        <div class="tl-year">{{ row.year }}</div>
+        <div class="tl-body">
+          <h4>{{ row.title }}</h4>
+          <span>{{ row.body }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

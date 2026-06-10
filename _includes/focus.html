@@ -1,0 +1,18 @@
+<section id="focus">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What I work on</span>
+      <h2>Three threads, one idea: sensing without cutting things open.</h2>
+      <p>Bio-inspired strategies meet engineering instrumentation to inspect structures non-destructively — from pipelines to wooden cavities.</p>
+    </div>
+    <div class="pillars">
+      {% for item in site.data.focus %}
+      <div class="pillar">
+        <span class="num">{{ forloop.index | prepend: "0" }}</span>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

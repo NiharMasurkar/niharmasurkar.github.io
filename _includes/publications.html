@@ -1,0 +1,19 @@
+<section id="publications">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Peer-reviewed</span>
+      <h2>Publications</h2>
+      <p>Spanning biomimetic robotics, nondestructive evaluation, and animal behavior.</p>
+    </div>
+    {% for pub in site.data.publications %}
+    <a class="pub" href="{{ pub.doi }}" target="_blank" rel="noopener">
+      <span class="venue">{{ pub.venue }}</span>
+      <span>
+        <span class="ptitle">{{ pub.title }}</span>
+        <span class="authors">{{ pub.authors }}</span>
+      </span>
+      <span class="doi">DOI ↗</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>

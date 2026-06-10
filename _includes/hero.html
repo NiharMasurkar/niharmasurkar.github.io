@@ -1,0 +1,22 @@
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Robotics &amp; Automation · Nondestructive Evaluation</span>
+      <h1>{{ site.name | split: " " | first }}<br>{{ site.name | split: " " | last }}<span class="light">.</span></h1>
+      <p class="lede">I teach machines to <span class="tap">{{ site.hero.tap_word }}</span> a surface, <span class="listen">{{ site.hero.listen_word }}</span> to what comes back, and read the structure hidden beneath — borrowing sensing strategies from the natural world.</p>
+      <div class="hero-meta">
+        <span><b>{{ site.role }}</b></span>
+        <span>{{ site.affiliation }}</span>
+      </div>
+    </div>
+
+    <div class="scope" id="scopePanel" title="Click to send a pulse">
+      <div class="scope-head">
+        <span><span class="scope-dot"></span>Acoustic Response</span>
+        <span>CH 1 · 250 fps</span>
+      </div>
+      <canvas id="scope"></canvas>
+      <div class="scope-foot">click the trace to send a <span>tap</span></div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,37 @@
+# Visual-resume timeline. Set "tap: true" to mark a milestone in amber
+# (a bio-inspired idea becoming hardware or a paper). Otherwise teal.
+
+- year: 2019
+  title: M.S. in Engineering — Robotics & Autonomous Systems
+  body: Arizona State University · Mechanical & Aerospace concentration
+
+- year: 2020
+  title: IoT Developer, University Technology Office
+  body: LIDAR point-cloud clustering, AWS IoT, multi-object tracking on campus security poles
+
+- year: 2021
+  tap: true
+  title: First publication — EMATs in a robotic gripper
+  body: Octopus-inspired gripper project · Materials Evaluation
+
+- year: 2022
+  title: Completed M.S.
+  body: Transition toward nondestructive evaluation research
+
+- year: 2023
+  tap: true
+  title: Began Ph.D. — NDE specialization
+  body: Tap-scanning & robotic NDE projects launch · aye-aye kinematics paper published
+
+- year: 2024
+  title: Conference year — SPIE, QNDE, ASNT, ROBIO
+  body: Tube inspection robot journal paper · biomimetic tap-scanning work presented
+
+- year: 2025
+  tap: true
+  title: Two journal papers
+  body: Aye-aye infrared thermography (Int. J. Primatology) · robotic gas-leak localization (Materials Evaluation)
+
+- year: 2026
+  title: ASNT Research Symposium
+  body: Presenting robotic ultrasonic testing work

@@ -1,0 +1,23 @@
+# ---- Site identity (edit these once; they appear across the site) ----
+name: Nihar Masurkar
+role: Ph.D. Candidate, Robotics & Automation
+affiliation: ISNDE Lab · Arizona State University
+email: nmasurka@asu.edu
+linkedin: https://www.linkedin.com/in/NiharMasurkar
+description: Bio-inspired robotics and nondestructive evaluation.
+
+# ---- Hero copy (the colored words are styled automatically) ----
+hero:
+  tap_word: tap
+  listen_word: listen
+  # The sentence is assembled in _includes/hero.html so the colored
+  # words stay highlighted. Edit the surrounding text there if needed.
+
+# ---- Build settings ----
+url: ""
+baseurl: ""        # if hosting at username.github.io/repo, set to "/repo"
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

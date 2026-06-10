@@ -1,0 +1,13 @@
+# Skill groups. Each group has a heading and a list of items (chips).
+
+- heading: Programming
+  items: [Python, C++, C, Java, MATLAB]
+
+- heading: Robotics & Control
+  items: [UR5 / RTDE, PID Control, Motion Capture, Force Control, AprilTag]
+
+- heading: NDE & Sensing
+  items: [Ultrasonic Testing, EMAT, Air-Coupled Transducers, Thermal Imaging, Acoustic Analysis]
+
+- heading: Design & Cloud
+  items: [Fusion 360, SolidWorks, EagleCAD / KiCAD, AWS IoT Core, MQTT]

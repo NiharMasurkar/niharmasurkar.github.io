@@ -1,0 +1,23 @@
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Selected work</span>
+      <h2>Research projects</h2>
+      <p>Hover a card to ping it. Each project pairs a biological observation with a working robotic system.</p>
+    </div>
+    <div class="projects" id="projGrid">
+      {% for p in site.data.projects %}
+      <div class="card">
+        <span class="yr">{{ p.year }}</span>
+        <div class="ping"></div>
+        <span class="tagline">{{ p.tagline }}</span>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.body }}</p>
+        <div class="chips">
+          {% for chip in p.chips %}<span class="chip">{{ chip }}</span>{% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

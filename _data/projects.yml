@@ -1,0 +1,38 @@
+# Research projects shown as cards. Each card "pings" on hover.
+# To add a project, copy a block and edit. Chips are a simple list.
+
+- tagline: Automated NDE
+  year: 2023—now
+  title: Robotic Integration for Automated Inspection
+  body: >
+    Mounting ultrasonic and air-coupled transducers on robotic manipulators
+    and mobile platforms, using fiducial markers to mirror a digital twin of
+    a pipeline and motion capture to validate joint trajectories.
+  chips: [UR5e, Ultrasonic Testing, Digital Twin, Motion Capture]
+
+- tagline: Bio-Inspired Sensing
+  year: 2023—now
+  title: Aye-Aye Tap-Scanning Robot
+  body: >
+    Analyzing the third digit of the aye-aye — a uniquely biological tap
+    scanner — then building a two-link arm that emulates its trajectory with
+    force-based control to detect cavities inside wooden structures.
+  chips: [Force Control, Thermal Imaging, Kinematics, Acoustics]
+
+- tagline: Soft Robotics
+  year: 2021
+  title: Octopus-Inspired Pneumatic Gripper
+  body: >
+    A soft modular gripper inspired by elephant trunks and octopus tentacles.
+    A two-finger 200 mm prototype held 45 N in pull-off testing and achieved
+    full 360° curling with minimal contact area.
+  chips: [Silicone, Pneumatics, Grasping]
+
+- tagline: Friction-Based Mobility
+  year: 2020—23
+  title: Lizard-Inspired Tube Inspection Robot
+  body: >
+    A friction-driven robot that grips a pipe's outer surface and moves along
+    its length, using PDMS frictional pads and a closed-loop gripper
+    controller with encoder feedback for precise force and position.
+  chips: [PID Control, PDMS, Load Cell, Published]

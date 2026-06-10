@@ -1,0 +1,20 @@
+# Three focus areas shown on the home page.
+# Add, remove, or reorder freely — the layout numbers them automatically.
+
+- title: Bio-Inspired Robotics
+  body: >
+    Drawing motion and sensing strategies from biology — the aye-aye's
+    percussive foraging, octopus tentacles, lizard locomotion, termite
+    drumming — and translating them into mechanisms.
+
+- title: Nondestructive Evaluation
+  body: >
+    Ultrasonic and acoustic testing to locate defects, cavities, and leaks
+    without damaging the part. Air-coupled transducers, EMATs, and signal
+    interpretation.
+
+- title: Autonomous Inspection
+  body: >
+    Robotic manipulators and mobile platforms that carry sensors to the
+    structure, guided by fiducial markers and motion-capture-validated
+    trajectories.
