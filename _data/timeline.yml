@@ -2,6 +2,7 @@
 # (a bio-inspired idea becoming hardware or a paper). Otherwise teal.
 
 - year: 2019
+  tap: true
   title: M.S. in Engineering — Robotics & Autonomous Systems
   body: Arizona State University · Mechanical & Aerospace concentration
 
@@ -41,6 +42,7 @@
   body: Aye-aye infrared thermography (Int. J. Primatology) · robotic gas-leak localization (Materials Evaluation)
 
 - year: 2026
+  tap: true
   title: Transition from Ph.D. Student to Ph.D. Candiate
   body: Presented my work on aye-aye inspired robotic tap-testing methods and passed my comprehensive exam
 
