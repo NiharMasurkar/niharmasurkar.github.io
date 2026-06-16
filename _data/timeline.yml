@@ -37,7 +37,7 @@
   body: Tube inspection robot journal paper · biomimetic tap-scanning work presented
 
 - year: 2025
-  tap: true
+  # tap: true
   title: Two journal papers
   body: Aye-aye infrared thermography (Int. J. Primatology) · robotic gas-leak localization (Materials Evaluation)
 
