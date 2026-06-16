@@ -15,7 +15,7 @@
   body: LIDAR point-cloud clustering, AWS IoT, multi-object tracking on campus security poles
 
 - year: 2021
-  tap: true
+  # tap: true
   title: First publication — EMATs in a robotic gripper
   body: Lizard-inspired gripper project · Materials Evaluation
 
