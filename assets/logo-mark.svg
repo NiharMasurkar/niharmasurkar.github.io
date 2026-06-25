@@ -1,14 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="NM monogram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 40" width="132" height="40" role="img" aria-label="Nihar Masurkar">
   <defs>
-    <linearGradient id="nm" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="nm" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#F2A65A"/>
       <stop offset="1" stop-color="#45C8B8"/>
     </linearGradient>
   </defs>
-  <g fill="none" stroke="url(#nm)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+  <g fill="none" stroke="url(#nm)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
     <!-- N -->
-    <path d="M33 132 L33 68 L81 132 L81 68"/>
+    <path d="M6 32 V8 L24 32 V8"/>
     <!-- M -->
-    <path d="M111 132 L111 68 L139 108 L167 68 L167 132"/>
+    <path d="M40 32 V8 L52 24 L64 8 V32"/>
   </g>
+  <text x="78" y="26" font-family="'Space Grotesk',sans-serif" font-size="15" font-weight="600" fill="#E7ECF5" letter-spacing="0.5">NM</text>
 </svg>

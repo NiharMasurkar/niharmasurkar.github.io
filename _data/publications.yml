@@ -1,33 +1,69 @@
-# Publications, newest first. To add one, copy a block.
-# Tip: this is the part al-folio automates from a .bib file — if your list
-# grows large, consider importing BibTeX instead of maintaining by hand.
+# Publications, split into Journals and Conferences. Newest first.
+# To add one, copy a block under the right list.
 
-- venue: 2025 · IJP
-  title: Investigating Acoustic-based Foraging Behavior in Aye-ayes through Infrared Thermography
-  authors: Nemati, H., Masurkar, N., & Dehghan-Niri, E. — International Journal of Primatology
-  doi: https://doi.org/10.1007/s10764-025-00498-y
+journals:
+  - venue: 2025 · IJP
+    title: Investigating Acoustic-based Foraging Behavior in Aye-ayes (Daubentonia madagascariensis) Through Infrared Thermography
+    authors: Nemati, H., Masurkar, N., & Dehghan-Niri, E. — International Journal of Primatology, 46(3), 763–784
+    doi: https://doi.org/10.1007/s10764-025-00498-y
 
-- venue: 2025 · ME
-  title: "Guided by Hearing: Robotic Motion Planning for Precision in Gas Leakage Localization"
-  authors: Nasr, M., Masurkar, N., Meshkizadeh, P., & Dehghan-Niri, E. — Materials Evaluation
-  doi: https://doi.org/10.32548/2025.me-04491
+  - venue: 2025 · ME
+    title: "Guided by Hearing: Robotic Motion Planning for Precision in Gas Leakage Localization"
+    authors: Nasr, M., Masurkar, N., Meshkizadeh, P., & Dehghan-Niri, E. — Materials Evaluation, 83(4), 51–61
+    doi: https://doi.org/10.32548/2025.me-04491
 
-- venue: 2024 · IJIRA
-  title: A Biologically-Inspired Tube Inspection Robot with Friction-Based Mobility
-  authors: Masurkar, N., Das, A., Rudraboina, M., et al. — Int. J. of Intelligent Robotics and Applications
-  doi: https://doi.org/10.1007/s41315-024-00370-x
+  - venue: 2024 · IJIRA
+    title: A Biologically-Inspired Tube Inspection Robot with Friction-Based Mobility
+    authors: Masurkar, N., Das, A., Rudraboina, M., Morris-Sjolund, D., Alvidrez, F., Dehghan-Niri, E., & Marvi, H. — Int. J. of Intelligent Robotics and Applications, 9(1), 164–175
+    doi: https://doi.org/10.1007/s41315-024-00370-x
 
-- venue: 2023 · BIROB
-  title: Aye-aye Middle Finger Kinematic Modeling and Motion Tracking during Tap-Scanning
-  authors: Masurkar, N., Jiming, K., Nemati, H., & Dehghan-Niri, E. — Biomimetic Intelligence and Robotics
-  doi: https://doi.org/10.1016/j.birob.2023.100134
+  - venue: 2023 · BIROB
+    title: Aye-aye Middle Finger Kinematic Modeling and Motion Tracking during Tap-Scanning
+    authors: Masurkar, N., Jiming, K., Nemati, H., & Dehghan-Niri, E. — Biomimetic Intelligence and Robotics, 3(4), 100134
+    doi: https://doi.org/10.1016/j.birob.2023.100134
 
-- venue: 2023 · ASME
-  title: Deep Learning-Based Time-Series Classification for Robotic Inspection of Pipe Condition using Non-Contact Ultrasonic Testing
-  authors: Hespeler, S., Nemati, H., Masurkar, N., et al. — J. of NDE, Diagnostics and Prognostics
-  doi: https://doi.org/10.1115/1.4063694
+  - venue: 2023 · ASME
+    title: Deep Learning-Based Time-Series Classification for Robotic Inspection of Pipe Condition using Non-Contact Ultrasonic Testing
+    authors: Hespeler, S., Nemati, H., Masurkar, N., Alvidrez, F., Marvi, H., & Dehghan-Niri, E. — J. of NDE, Diagnostics and Prognostics of Engineering Systems, 7(1)
+    doi: https://doi.org/10.1115/1.4063694
 
-- venue: 2021 · ME
-  title: Integrating Electromagnetic Acoustic Transducers in a Modular Robotic Gripper for Inspecting Tubular Components
-  authors: Nemati, H., Alvidrez, F., Das, A., Masurkar, N., et al. — Materials Evaluation
-  doi: https://doi.org/10.32548/2021.me-04223
+  - venue: 2021 · ME
+    title: Integrating Electromagnetic Acoustic Transducers in a Modular Robotic Gripper for Inspecting Tubular Components
+    authors: Nemati, H., Alvidrez, F., Das, A., Masurkar, N., Rudraboina, M., Marvi, H., & Dehghan-Niri, E. — Materials Evaluation, 79(7), 715–727
+    doi: https://doi.org/10.32548/2021.me-04223
+
+conferences:
+  - venue: 2024 · ROBIO
+    title: Overcoming Challenges in the Biomimetic Study of Termite Drumming Behavior
+    authors: Dehghan-Niri, E., Masurkar, N., Nemati, H., Goode, Z., Halliday, H. S., & Liebig, J. — 2024 IEEE Int. Conf. on Robotics and Biomimetics (ROBIO), Bangkok, Thailand, pp. 172–177
+    doi: https://doi.org/10.1109/ROBIO64047.2024.10907719
+
+  - venue: 2024 · SPIE
+    title: Enhancing Biomimetic Design of Tap Scanning Sensors through High-Resolution Thermal Camera-Based Behavioral Studies
+    authors: Masurkar, N., Nemati, H., & Dehghan-Niri, E. — Proc. SPIE 12944, Bioinspiration, Biomimetics, and Bioreplication XIV, 129440E
+    doi: https://doi.org/10.1117/12.3027268
+
+  - venue: 2024 · QNDE
+    title: Advancing the Biomimetic Design for Automated Tap Scanning Through Aye-Aye's Behavioral Studies Utilizing High-Resolution Thermal Cameras
+    authors: Masurkar, N., Nemati, H., & Dehghan-Niri, E. — 51st Annual Review of Progress in Quantitative NDE, Denver, CO, July 22–24, 2024
+    doi: ""
+
+  - venue: 2024 · ASNT
+    title: Automated Robotic Approach for Source Localization of Minor Gas Leak Using a Two-Microphone Array
+    authors: Masurkar, N., Meshki Zadeh, P., & Dehghan-Niri, E. — 32nd ASNT Research Symposium, Pittsburgh, PA, June 24–28, 2024
+    doi: ""
+
+  - venue: 2024 · SPIE
+    title: Enhancing the Biomimetic Design of Tap Scanning Sensors through High-Resolution Thermal Camera-Based Behavioral Studies
+    authors: Masurkar, N., Nemati, H., & Dehghan-Niri, E. — SPIE Smart Structures/NDE, Long Beach, CA, 2024
+    doi: ""
+
+  - venue: 2023 · ASNT
+    title: An Automated Robotic Approach for Inspection of Metallic Tubular Structure
+    authors: Masurkar, N., Nemati, H., Dehghan-Niri, E., & Hespeler, S. — 31st ASNT Research Symposium, Columbus, OH, June 26–30, 2023
+    doi: https://doi.org/10.32548/rs.2023.003
+
+  - venue: 2021 · ASNT
+    title: Toward Automated Ultrasonic Inspection of Pipelines and Tubular Components
+    authors: Nemati, H., Alvidrez, F., Das, A., Masurkar, N., Rudraboina, M., Marvi, H., & Dehghan-Niri, E. — ASNT Research Symposium, Virtual, March 2021
+    doi: ""

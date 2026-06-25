@@ -7,15 +7,14 @@
   body: Arizona State University · Mechanical & Aerospace concentration
 
 - year: 2020
-  title: Graduate Research Assistant, BIRTH Lab, Arizona State University
-  body: Lizard-inspired project, Octupus-inspired soft robotic gripper, Frictional Characterization of PDMS Pads
+  title: Graduate Research Assistant, BIRTH Lab, ASU
+  body: Lizard-inspired tube robot · octopus-inspired soft gripper · PDMS pad characterization
 
 - year: 2020
-  title: IoT Developer, University Technology Office
+  title: IoT Developer, University Technology Office, ASU
   body: LIDAR point-cloud clustering, AWS IoT, multi-object tracking on campus security poles
 
 - year: 2021
-  # tap: true
   title: First publication — EMATs in a robotic gripper
   body: Lizard-inspired gripper project · Materials Evaluation
 
@@ -26,25 +25,20 @@
 - year: 2023
   tap: true
   title: Began Ph.D. — Robotics & Automation Engineering
-  body:  Arizona State University · NDE Specialization
-
-- year: 2020
-  title: Graduate Research Assistant, ISNDE Lab, Arizona State University
-  body: aye-aye inspired tap-scanning & robotic NDE projects launch
+  body: Arizona State University · NDE specialization · ISNDE Lab
 
 - year: 2024
   title: Conference year — SPIE, QNDE, ASNT, ROBIO
   body: Tube inspection robot journal paper · biomimetic tap-scanning work presented
 
 - year: 2025
-  # tap: true
   title: Two journal papers
   body: Aye-aye infrared thermography (Int. J. Primatology) · robotic gas-leak localization (Materials Evaluation)
 
 - year: 2026
   tap: true
-  title: Transition from Ph.D. Student to Ph.D. Candiate
-  body: Presented my work on aye-aye inspired robotic tap-testing methods and passed my comprehensive exam
+  title: Advanced to Ph.D. Candidate
+  body: Presented aye-aye-inspired robotic tap-testing methods · passed comprehensive exam
 
 - year: 2026
   title: ASNT Research Symposium

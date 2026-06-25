@@ -4,10 +4,16 @@
   items: [Python, C++, C, Java, MATLAB]
 
 - heading: Robotics & Control
-  items: [UR5 / RTDE, PID Control, Motion Capture, Force Control, AprilTag]
+  items: [UR5 / RTDE, PID Control, Motion Capture, Force Control, AprilTag, ROS]
 
 - heading: NDE & Sensing
   items: [Ultrasonic Testing, EMAT, Air-Coupled Transducers, Thermal Imaging, Acoustic Analysis]
 
-- heading: Design & Cloud
-  items: [Fusion 360, SolidWorks, EagleCAD / KiCAD, AWS IoT Core, MQTT]
+- heading: Design & Electronics
+  items: [Fusion 360, SolidWorks, EagleCAD / KiCAD, ExpressPCB, Arduino IDE]
+
+- heading: Cloud & IoT
+  items: [AWS IoT Core, Amazon EC2, Kinesis Streams, MQTT, YOLO / MOT]
+
+- heading: Certifications
+  items: [Control of Mobile Robots (Coursera), PCB Design & Fabrication (NPTEL)]

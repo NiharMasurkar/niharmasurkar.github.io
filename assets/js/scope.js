@@ -102,3 +102,70 @@
     rows.forEach(r=>r.classList.add('in'));
   }
 })();
+
+/* ---- Project lightbox modal ---- */
+(function(){
+  const modal = document.getElementById('projModal');
+  if(!modal) return;
+  const elMedia = document.getElementById('modalMedia');
+  const elLab = document.getElementById('modalLab');
+  const elTitle = document.getElementById('modalTitle');
+  const elDesc = document.getElementById('modalDesc');
+  const elResults = document.getElementById('modalResults');
+  let lastFocus = null;
+
+  function buildMedia(card){
+    elMedia.innerHTML = '';
+    const src = card.getAttribute('data-media');
+    const type = card.getAttribute('data-media-type');
+    const poster = card.getAttribute('data-poster');
+    if(src && src.trim() !== ''){
+      if(type === 'video'){
+        const v = document.createElement('video');
+        v.controls = true; v.playsInline = true; v.autoplay = true; v.muted = true; v.loop = true;
+        if(poster && poster.trim() !== '') v.poster = poster;
+        const s = document.createElement('source'); s.src = src; v.appendChild(s);
+        elMedia.appendChild(v);
+      } else {
+        const img = document.createElement('img');
+        img.src = src; img.alt = card.getAttribute('data-title') || '';
+        elMedia.appendChild(img);
+      }
+      elMedia.classList.remove('empty');
+    } else {
+      elMedia.classList.add('empty');
+      elMedia.innerHTML = '<div class="media-placeholder big"><span>media coming soon</span></div>';
+    }
+  }
+
+  function open(card){
+    lastFocus = document.activeElement;
+    buildMedia(card);
+    elLab.textContent = card.getAttribute('data-lab') || '';
+    elTitle.textContent = card.getAttribute('data-title') || '';
+    elDesc.textContent = card.getAttribute('data-description') || '';
+    elResults.textContent = card.getAttribute('data-results') || '';
+    modal.classList.add('show');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    const closeBtn = modal.querySelector('.modal-close');
+    if(closeBtn) closeBtn.focus();
+  }
+  function close(){
+    modal.classList.remove('show');
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    const vid = elMedia.querySelector('video');
+    if(vid){ try{ vid.pause(); }catch(e){} }
+    if(lastFocus) lastFocus.focus();
+  }
+
+  document.querySelectorAll('#projGrid .card').forEach(card=>{
+    card.addEventListener('click', ()=>open(card));
+    card.addEventListener('keydown', e=>{
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); open(card); }
+    });
+  });
+  modal.querySelectorAll('[data-close]').forEach(el=> el.addEventListener('click', close));
+  document.addEventListener('keydown', e=>{ if(e.key === 'Escape' && modal.classList.contains('show')) close(); });
+})();

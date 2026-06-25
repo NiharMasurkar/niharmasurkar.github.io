@@ -1,0 +1,21 @@
+<section id="awards">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Recognition</span>
+      <h2>Awards &amp; achievements</h2>
+      <p>Hackathons, design competitions, and research funding.</p>
+    </div>
+    <div class="awards">
+      {% for a in site.data.awards %}
+      <div class="award">
+        <div class="award-place">{{ a.place }}</div>
+        <div class="award-body">
+          <h4>{{ a.title }}</h4>
+          <span class="award-org">{{ a.org }}</span>
+          <p>{{ a.body }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

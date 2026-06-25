@@ -1,0 +1,47 @@
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">About me</span>
+      <h2>Where biology meets instrumentation.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        {% for para in site.about.paragraphs %}
+        <p>{{ para }}</p>
+        {% endfor %}
+        <a class="btn solid resume-btn" href="{{ site.resume | relative_url }}" download>
+          Download résumé (PDF)
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" style="margin-left:8px;vertical-align:-2px"><path fill="currentColor" d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg>
+        </a>
+
+        <div class="edu-block">
+          <h4 class="side-label">Education</h4>
+          {% for ed in site.data.education %}
+          <div class="edu">
+            <div class="edu-year">{{ ed.years }}</div>
+            <div class="edu-body">
+              <h5>{{ ed.degree }}</h5>
+              <span class="edu-detail">{{ ed.detail }}</span>
+              <span class="edu-school">{{ ed.school }}</span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="about-photo">
+        {% if site.about.photo and site.about.photo != "" %}
+        <div class="photo-disc">
+          <img src="{{ site.about.photo | relative_url }}" alt="{{ site.name }}"
+               onerror="this.style.display='none';this.parentNode.classList.add('photo-empty')">
+          <span class="photo-placeholder">your photo<br>goes here</span>
+        </div>
+        {% else %}
+        <div class="photo-disc photo-empty">
+          <span class="photo-placeholder">your photo<br>goes here</span>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

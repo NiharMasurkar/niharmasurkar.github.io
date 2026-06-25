@@ -1,38 +1,97 @@
-# Research projects shown as cards. Each card "pings" on hover.
-# To add a project, copy a block and edit. Chips are a simple list.
+# Research projects shown as cards. Each card "pings" on hover and opens a
+# lightbox modal with media, a fuller description, and results.
+#
+# To add media: drop an image or video into assets/media/ and set:
+#   media: /assets/media/your-file.jpg      (image)
+#   media_type: image
+# or
+#   media: /assets/media/your-file.mp4      (video)
+#   media_type: video
+#   poster: /assets/media/your-poster.jpg   (optional video thumbnail)
+# Leave "media" blank to show a styled placeholder until you add one.
 
 - tagline: Automated NDE
   year: 2023—now
-  title: Robotic Integration for Automated Inspection
+  title: Robotic Integration for Automated NDE
+  lab: ISNDE Lab, ASU
   body: >
     Mounting ultrasonic and air-coupled transducers on robotic manipulators
     and mobile platforms, using fiducial markers to mirror a digital twin of
     a pipeline and motion capture to validate joint trajectories.
+  description: >
+    Incorporating ultrasonic testing and air-coupled transducers into diverse
+    robotic manipulators and mobile platforms, using fiducial markers to mirror
+    a digital twin of a pipeline. A motion-capture system precisely validates
+    the joint trajectory of each platform to refine and optimize the control
+    system.
+  results: >
+    A repeatable robotic inspection pipeline with motion-capture-validated
+    trajectories, enabling non-contact ultrasonic scanning of tubular
+    structures against a digital twin.
   chips: [UR5e, Ultrasonic Testing, Digital Twin, Motion Capture]
+  media: ""
+  media_type: image
 
 - tagline: Bio-Inspired Sensing
   year: 2023—now
-  title: Aye-Aye Tap-Scanning Robot
+  title: Bio-Inspired Tap-Scanning Robot
+  lab: ISNDE Lab, ASU
   body: >
     Analyzing the third digit of the aye-aye — a uniquely biological tap
     scanner — then building a two-link arm that emulates its trajectory with
     force-based control to detect cavities inside wooden structures.
+  description: >
+    Conducted motion analysis on the third digit of an aye-aye (Daubentonia
+    madagascariensis) to elucidate its dynamic range as a distinctive
+    biological tap scanner. Conceptualized a two-link robotic arm that emulates
+    the aye-aye's motion trajectory, with force-based control enabling tap
+    scanning of cavities within wooden structures.
+  results: >
+    A force-controlled two-link arm that reproduces the aye-aye's percussive
+    scan, locating subsurface cavities in wood non-destructively.
   chips: [Force Control, Thermal Imaging, Kinematics, Acoustics]
+  media: ""
+  media_type: image
 
 - tagline: Soft Robotics
   year: 2021
-  title: Octopus-Inspired Pneumatic Gripper
+  title: Octopus-Inspired Robotic Gripper
+  lab: Bio-Inspired Robotics, ASU
   body: >
     A soft modular gripper inspired by elephant trunks and octopus tentacles.
     A two-finger 200 mm prototype held 45 N in pull-off testing and achieved
     full 360° curling with minimal contact area.
+  description: >
+    Engineered a soft pneumatic modular gripper inspired by elephant trunks and
+    octopus tentacles, prioritizing efficient grasping with minimal contact
+    area. Programmed a pneumatic controller for the silicone arms with central
+    air channels.
+  results: >
+    A two-finger 200 mm gripper that held 45 N in maximum pull-off testing and
+    achieved a full 360° curl.
   chips: [Silicone, Pneumatics, Grasping]
+  media: ""
+  media_type: image
 
 - tagline: Friction-Based Mobility
   year: 2020—23
   title: Lizard-Inspired Tube Inspection Robot
+  lab: BIRTH Lab, ASU
   body: >
     A friction-driven robot that grips a pipe's outer surface and moves along
     its length, using PDMS frictional pads and a closed-loop gripper
     controller with encoder feedback for precise force and position.
+  description: >
+    Developed a PID controller for a three-axis Cartesian platform with a load
+    cell to characterize the gripper pad's friction — essential for a robot
+    that grips a pipe's outer surface and moves along its length. Manufactured
+    custom PDMS frictional pads and a closed-loop controller for the gripper
+    fingers, giving precise control of opening, closing, speed, load torque,
+    and position via encoder feedback.
+  results: >
+    A friction-based tube-climbing robot, published in the International
+    Journal of Intelligent Robotics and Applications, with ASU MORE funding and
+    W. L. Gore & Associates sponsorship.
   chips: [PID Control, PDMS, Load Cell, Published]
+  media: ""
+  media_type: image

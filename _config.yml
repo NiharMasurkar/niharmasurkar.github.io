@@ -3,7 +3,10 @@ name: Nihar Masurkar
 role: Ph.D. Candidate, Robotics & Automation
 affiliation: ISNDE Lab · Arizona State University
 email: nmasurka@asu.edu
-linkedin: https://www.linkedin.com/in/NiharMasurkar
+linkedin: https://www.linkedin.com/in/niharmasurkar/
+github: https://github.com/NiharMasurkar
+scholar: https://scholar.google.com/citations?user=KCfl3kAAAAAJ&hl=en&oi=ao
+resume: /assets/docs/Nihar_Masurkar_Resume.pdf
 description: Bio-inspired robotics and nondestructive evaluation.
 
 # ---- Hero copy (the colored words are styled automatically) ----
@@ -12,6 +15,17 @@ hero:
   listen_word: listen
   # The sentence is assembled in _includes/hero.html so the colored
   # words stay highlighted. Edit the surrounding text there if needed.
+
+# ---- About Me copy (edit freely; paragraphs are a list) ----
+about:
+  photo: /assets/media/profile.jpg   # drop your photo here; placeholder shows until then
+  paragraphs:
+    - >
+      I'm a Ph.D. candidate in Robotics & Automation Engineering at Arizona
+      State University, specializing in non-destructive testing in the ISNDE
+      Lab. I borrow sensing strategies from nature — the aye-aye's tap, a
+      lizard's climb, an octopus's grip — and turn them into robots that
+      inspect structures without cutting them open.
 
 # ---- Build settings ----
 url: ""

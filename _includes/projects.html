@@ -3,21 +3,70 @@
     <div class="sec-head">
       <span class="eyebrow">Selected work</span>
       <h2>Research projects</h2>
-      <p>Hover a card to ping it. Each project pairs a biological observation with a working robotic system.</p>
+      <p>Each project pairs a biological observation with a working robotic system. Click a card for details and media.</p>
     </div>
     <div class="projects" id="projGrid">
       {% for p in site.data.projects %}
-      <div class="card">
-        <span class="yr">{{ p.year }}</span>
-        <div class="ping"></div>
-        <span class="tagline">{{ p.tagline }}</span>
-        <h3>{{ p.title }}</h3>
-        <p>{{ p.body }}</p>
-        <div class="chips">
-          {% for chip in p.chips %}<span class="chip">{{ chip }}</span>{% endfor %}
+      <article class="card"
+        data-title="{{ p.title | escape }}"
+        data-lab="{{ p.lab | escape }}"
+        data-year="{{ p.year | escape }}"
+        data-description="{{ p.description | strip_newlines | escape }}"
+        data-results="{{ p.results | strip_newlines | escape }}"
+        data-media="{{ p.media | relative_url }}"
+        data-media-type="{{ p.media_type }}"
+        data-poster="{{ p.poster | relative_url }}"
+        tabindex="0" role="button" aria-label="Open {{ p.title | escape }}">
+        <div class="card-media">
+          {% if p.media and p.media != "" %}
+            {% if p.media_type == "video" %}
+              <video muted loop playsinline preload="metadata" {% if p.poster %}poster="{{ p.poster | relative_url }}"{% endif %}>
+                <source src="{{ p.media | relative_url }}">
+              </video>
+            {% else %}
+              <img src="{{ p.media | relative_url }}" alt="{{ p.title | escape }}" loading="lazy">
+            {% endif %}
+          {% else %}
+            <div class="media-placeholder">
+              <svg viewBox="0 0 48 24" width="60" height="30" aria-hidden="true" class="ph-wave">
+                <path d="M0 12 Q6 12 8 12 T12 4 T16 20 T20 8 T24 16 T28 11 T32 13 T40 12 T48 12" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <span>media coming soon</span>
+            </div>
+          {% endif %}
+          <span class="card-expand" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M4 4h7V2H2v9h2V4zm16 0v7h2V2h-9v2h7zM4 20v-7H2v9h9v-2H4zm16-7v7h-7v2h9v-9h-2z"/></svg>
+          </span>
         </div>
-      </div>
+        <div class="card-body">
+          <span class="yr">{{ p.year }}</span>
+          <div class="ping"></div>
+          <span class="tagline">{{ p.tagline }}</span>
+          <h3>{{ p.title }}</h3>
+          <p>{{ p.body }}</p>
+          <div class="chips">
+            {% for chip in p.chips %}<span class="chip">{{ chip }}</span>{% endfor %}
+          </div>
+        </div>
+      </article>
       {% endfor %}
+    </div>
+  </div>
+
+  <!-- Lightbox modal -->
+  <div class="modal" id="projModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" data-close aria-label="Close">&times;</button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-content">
+        <span class="tagline" id="modalLab"></span>
+        <h3 id="modalTitle"></h3>
+        <h4 class="modal-sub">Description</h4>
+        <p id="modalDesc"></p>
+        <h4 class="modal-sub">Results</h4>
+        <p id="modalResults"></p>
+      </div>
     </div>
   </div>
 </section>

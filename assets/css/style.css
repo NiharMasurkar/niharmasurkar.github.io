@@ -198,3 +198,136 @@ footer .links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .tl-row{opacity:1;transform:none}
 }
+
+/* ============ ADDED: socials, about, media cards, modal, awards ============ */
+
+/* SOCIAL LINKS (hero) */
+.socials{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.social{display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--mono);font-size:13px;color:var(--muted);
+  border:1px solid var(--hair-strong);border-radius:30px;padding:9px 16px;
+  transition:color .2s,border-color .2s,transform .2s,background .2s}
+.social svg{color:var(--faint);transition:color .2s}
+.social:hover{color:var(--bg);background:var(--listen);border-color:var(--listen);transform:translateY(-2px)}
+.social:hover svg{color:var(--bg)}
+.social:focus-visible{outline:2px solid var(--listen);outline-offset:3px}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:52px;align-items:start}
+@media(max-width:880px){.about-grid{grid-template-columns:1fr;gap:36px}
+  .about-photo{grid-row:1;order:-1;max-width:340px;margin:0 auto}}
+.about-copy p{color:var(--muted);font-size:16px;margin-bottom:18px;max-width:60ch}
+.resume-btn{margin-top:10px}
+
+/* education now sits below the resume button */
+.edu-block{margin-top:38px;border:1px solid var(--hair);border-radius:14px;
+  background:var(--bg-panel-2);padding:24px 26px;max-width:560px}
+.side-label{font-family:var(--mono);font-size:12px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--faint);margin-bottom:18px}
+.edu{display:grid;grid-template-columns:1fr;gap:3px;padding:14px 0;border-top:1px solid var(--hair)}
+.edu:first-of-type{border-top:none;padding-top:0}
+.edu-year{font-family:var(--mono);font-size:12px;color:var(--listen)}
+.edu-body h5{font-family:var(--display);font-weight:600;font-size:16px;margin:2px 0 3px}
+.edu-detail{display:block;color:var(--muted);font-size:13.5px}
+.edu-school{display:block;color:var(--faint);font-size:13px;margin-top:2px}
+
+/* PROFILE PHOTO — circular portrait on a colored disc */
+.about-photo{position:relative}
+.photo-disc{position:relative;width:100%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 50% 38%,var(--tap) 0%,#e8863a 55%,#d96f2a 100%);
+  display:flex;align-items:flex-end;justify-content:center;overflow:hidden;
+  box-shadow:0 30px 60px -28px rgba(242,166,90,0.45),
+             inset 0 0 0 1px rgba(255,255,255,0.06)}
+.photo-disc::after{content:"";position:absolute;inset:0;border-radius:50%;
+  box-shadow:inset 0 -40px 60px -30px rgba(0,0,0,0.35);pointer-events:none}
+.photo-disc img{width:96%;height:auto;display:block;object-fit:contain;
+  object-position:bottom center;filter:drop-shadow(0 18px 30px rgba(0,0,0,0.35))}
+.photo-disc.photo-empty{
+  align-items:center;background:radial-gradient(circle at 50% 40%,var(--bg-panel),var(--bg-panel-2));
+  border:1px dashed var(--hair-strong);box-shadow:none}
+.photo-placeholder{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  text-align:center;line-height:1.5;display:none;
+  font-family:var(--mono);font-size:13px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--faint);z-index:0}
+.photo-disc.photo-empty .photo-placeholder{display:block}
+.photo-disc img{position:relative;z-index:1}
+
+
+/* PROJECT MEDIA CARDS */
+#projGrid .card{display:flex;flex-direction:column;padding:0;cursor:pointer}
+#projGrid .card:focus-visible{outline:2px solid var(--listen);outline-offset:3px}
+.card-media{position:relative;aspect-ratio:16/9;overflow:hidden;
+  border-bottom:1px solid var(--hair);
+  background:radial-gradient(circle at 50% 40%,var(--bg-panel),var(--bg-panel-2));
+  border-radius:14px 14px 0 0}
+.card-media img,.card-media video{width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .4s}
+#projGrid .card:hover .card-media img,#projGrid .card:hover .card-media video{transform:scale(1.04)}
+.media-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:10px;color:var(--faint)}
+.media-placeholder .ph-wave{color:var(--listen);opacity:.55}
+.media-placeholder span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase}
+.media-placeholder.big span{font-size:13px}
+.card-expand{position:absolute;top:12px;right:12px;width:30px;height:30px;border-radius:8px;
+  display:flex;align-items:center;justify-content:center;color:var(--ink);
+  background:rgba(10,15,26,0.6);backdrop-filter:blur(4px);
+  border:1px solid var(--hair-strong);opacity:0;transition:opacity .25s}
+#projGrid .card:hover .card-expand{opacity:1}
+.card-body{padding:24px 26px 26px;position:relative;flex:1;display:flex;flex-direction:column}
+.card-body .chips{margin-top:auto;padding-top:14px}
+.card-body .yr{position:absolute;top:22px;right:24px;font-family:var(--mono);
+  font-size:12px;color:var(--faint)}
+
+/* MODAL */
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:24px}
+.modal.show{display:flex}
+.modal-backdrop{position:absolute;inset:0;background:rgba(5,8,14,0.78);backdrop-filter:blur(6px)}
+.modal-panel{position:relative;z-index:1;max-width:780px;width:100%;max-height:90vh;overflow:auto;
+  background:linear-gradient(165deg,var(--bg-panel),var(--bg-panel-2));
+  border:1px solid var(--hair-strong);border-radius:16px;
+  box-shadow:0 40px 80px -30px rgba(0,0,0,0.9);
+  animation:modalIn .28s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+.modal-close{position:absolute;top:14px;right:16px;z-index:3;width:36px;height:36px;border-radius:9px;
+  background:rgba(10,15,26,0.7);border:1px solid var(--hair-strong);color:var(--ink);
+  font-size:22px;line-height:1;cursor:pointer;transition:border-color .2s,color .2s}
+.modal-close:hover{border-color:var(--listen);color:var(--listen)}
+.modal-media{width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:16px 16px 0 0;
+  background:radial-gradient(circle at 50% 40%,var(--bg-panel),var(--bg-panel-2));
+  border-bottom:1px solid var(--hair)}
+.modal-media img,.modal-media video{width:100%;height:100%;object-fit:cover;display:block}
+.modal-media.empty{display:flex;align-items:center;justify-content:center}
+.modal-content{padding:26px 30px 32px}
+.modal-content .tagline{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--tap)}
+.modal-content h3{font-family:var(--display);font-weight:600;font-size:26px;margin:8px 0 6px;line-height:1.12}
+.modal-sub{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--listen);margin:20px 0 8px}
+.modal-content p{color:var(--muted);font-size:15px}
+
+/* PUBLICATIONS subsections */
+.pub-group{font-family:var(--display);font-weight:600;font-size:20px;
+  margin:34px 0 6px;color:var(--ink);letter-spacing:-0.01em}
+.pub-group:first-of-type{margin-top:8px}
+.pub.pub-nolink{cursor:default}
+.pub.pub-nolink:hover{background:transparent}
+.doi-off{color:var(--faint);opacity:.5}
+
+/* AWARDS */
+.awards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:760px){.awards{grid-template-columns:1fr}}
+.award{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;
+  border:1px solid var(--hair);border-radius:12px;padding:22px 24px;background:var(--bg-panel-2);
+  transition:border-color .25s,transform .25s}
+.award:hover{border-color:var(--hair-strong);transform:translateY(-3px)}
+.award-place{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--bg);background:linear-gradient(120deg,var(--tap),var(--listen));
+  padding:6px 11px;border-radius:20px;white-space:nowrap;align-self:start}
+.award-body h4{font-family:var(--display);font-weight:600;font-size:17px;margin-bottom:3px}
+.award-org{font-family:var(--mono);font-size:12px;color:var(--faint);display:block;margin-bottom:8px}
+.award-body p{color:var(--muted);font-size:14px}
+
+@media(prefers-reduced-motion:reduce){
+  .modal-panel{animation:none}
+}
