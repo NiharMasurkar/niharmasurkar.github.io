@@ -15,41 +15,71 @@
   title: Robotic Integration for Automated NDE
   lab: ISNDE Lab, ASU
   body: >
-    Mounting ultrasonic and air-coupled transducers on robotic manipulators
-    and mobile platforms, using fiducial markers to mirror a digital twin of
-    a pipeline and motion capture to validate joint trajectories.
+    An automated ultrasonic testing cell built around a UR5e manipulator, a
+    Sonatest Wave flaw detector, and a PID-controlled probe that measures
+    coupling quality against the pipeline's digital twin in real time.
   description: >
-    Incorporating ultrasonic testing and air-coupled transducers into diverse
-    robotic manipulators and mobile platforms, using fiducial markers to mirror
-    a digital twin of a pipeline. A motion-capture system precisely validates
-    the joint trajectory of each platform to refine and optimize the control
-    system.
+    Built an automated ultrasonic testing (UT) cell integrating a UR5e
+    manipulator (RTDE), Sonatest Wave flaw detector, ZED stereo camera, and an
+    ESP32-driven couplant pump over MQTT, operated through a custom PyQt5
+    console with live A-scan display, jogging, and device health monitoring.
+    Designed a PID force controller for probe coupling and quantified A-scan
+    repeatability against direct-force and threshold-descent strategies, using
+    fiducial markers to register scans to a pipeline digital twin and motion
+    capture to validate joint trajectories.
   results: >
-    A repeatable robotic inspection pipeline with motion-capture-validated
-    trajectories, enabling non-contact ultrasonic scanning of tubular
-    structures against a digital twin.
-  chips: [UR5e, Ultrasonic Testing, Digital Twin, Motion Capture]
+    A repeatable robotic UT pipeline (RoboScan) with force feedback as a
+    real-time measure of coupling quality, presented at CEECT 2026 and the
+    2026 ASNT Research Symposium.
+  chips: [UR5e, Ultrasonic Testing, PID Force Control, Digital Twin]
   media: ""
   media_type: image
 
 - tagline: Bio-Inspired Sensing
   year: 2023—now
-  title: Bio-Inspired Tap-Scanning Robot
+  title: Bio-Inspired Tap-Glide Acoustic Inspection Robot
   lab: ISNDE Lab, ASU
   body: >
-    Analyzing the third digit of the aye-aye — a uniquely biological tap
-    scanner — then building a two-link arm that emulates its trajectory with
-    force-based control to detect cavities inside wooden structures.
+    Behavioral studies of aye-ayes at the Duke Lemur Center revealed frictional
+    gliding as a foraging mode alongside percussive tapping — now translated
+    into an acoustic tap-testing pipeline for composite inspection.
   description: >
-    Conducted motion analysis on the third digit of an aye-aye (Daubentonia
-    madagascariensis) to elucidate its dynamic range as a distinctive
-    biological tap scanner. Conceptualized a two-link robotic arm that emulates
-    the aye-aye's motion trajectory, with force-based control enabling tap
-    scanning of cavities within wooden structures.
+    Conducted multimodal behavioural studies with aye-ayes (Daubentonia
+    madagascariensis) at the Duke Lemur Center, synchronizing high-speed
+    infrared thermography (FLIR X6800sc, 250 fps) with acoustic recording
+    across six subjects. Modelled the third digit as a 2R manipulator
+    (Denavit-Hartenberg parameters) and designed a cam-driven test bench
+    reproducing tapping and gliding with closed-loop DYNAMIXEL actuation and
+    FUTEK load cell force sensing on a 5x-scaled finger.
   results: >
-    A force-controlled two-link arm that reproduces the aye-aye's percussive
-    scan, locating subsurface cavities in wood non-destructively.
-  chips: [Force Control, Thermal Imaging, Kinematics, Acoustics]
+    Identified frictional gliding as a foraging mode complementary to
+    percussive tapping and translated it into an acoustic tap-testing pipeline
+    for sub-surface flaw and delamination detection, underlying a filed U.S.
+    provisional patent.
+  chips: [Force Control, Infrared Thermography, Kinematics, Acoustics]
+  media: ""
+  media_type: image
+
+- tagline: Bio-Inspired Sensing
+  year: 2024—now
+  title: Acoustic Gas Leak Localization on Robotic Platforms
+  lab: ISNDE Lab, ASU
+  body: >
+    A two-microphone array mounted on a robotic platform localizes minor gas
+    leaks, guided by hearing-based motion planning inspired by biological
+    sound localization.
+  description: >
+    Developed an automated robotic approach that localizes minor gas leaks
+    using a two-microphone array mounted on a robotic platform, then
+    co-developed hearing-guided motion planning for precise localization and
+    bio-inspired active acoustic sensing with robotic pinnae. Also contributed
+    to field evaluation of an optical microphone for wildlife echolocation
+    recording and biomimetic studies of termite drumming as a model for
+    vibro-acoustic sensing.
+  results: >
+    A robotic leak-localization pipeline published in Materials Evaluation and
+    presented at ASNT, with bio-inspired active sensing work at ICCAS 2026.
+  chips: [Microphone Array, Motion Planning, Acoustics, Bio-Inspired Sensing]
   media: ""
   media_type: image
 
@@ -93,5 +123,48 @@
     Journal of Intelligent Robotics and Applications, with ASU MORE funding and
     W. L. Gore & Associates sponsorship.
   chips: [PID Control, PDMS, Load Cell, Published]
+  media: ""
+  media_type: image
+
+- tagline: Mobile Robotics
+  year: Course Project
+  title: TurtleBot 4 Object Detection and Path Following
+  lab: ASU Course Project
+  body: >
+    A TurtleBot 4 on ROS 2 Humble that detects objects in its onboard camera
+    stream and drives itself along a target path using closed-loop feedback.
+  description: >
+    Set up a TurtleBot 4 (Create 3 base, Raspberry Pi) on ROS 2 Humble and
+    Ubuntu 22.04, including DDS middleware and multi-machine network
+    discovery. Developed ROS 2 Python nodes that detect objects in the
+    onboard camera stream and drive the robot along a target path using
+    closed-loop feedback.
+  results: >
+    A working ROS 2 perception-and-control pipeline for autonomous path
+    following on a mobile robot platform.
+  chips: [ROS 2, Object Detection, Closed-Loop Control]
+  media: ""
+  media_type: image
+
+- tagline: Bio-Inspired Mechanisms
+  year: Course Project
+  title: Foldable Five-Bar Bipedal Walking Robot
+  lab: ASU Course Project
+  body: >
+    An ostrich-inspired bipedal walker using foldable laminate five-bar leg
+    mechanisms, with a parametric MuJoCo model validating gait against a
+    fabricated prototype.
+  description: >
+    Designed an ostrich-inspired bipedal walker using foldable laminate
+    five-bar leg mechanisms; performed kinematic analysis and built a
+    parametric MuJoCo model for static and dynamic gait simulation. Optimized
+    end-effector link length for distance travelled, prototyped cardstock and
+    fiberglass laminate versions from DXF cut files with Arduino-controlled
+    servos, and validated measured end-effector trajectories against
+    simulation.
+  results: >
+    A fabricated foldable-laminate bipedal walker whose measured gait
+    trajectories matched the MuJoCo simulation.
+  chips: [MuJoCo, Kinematics, Foldable Laminate, Arduino]
   media: ""
   media_type: image

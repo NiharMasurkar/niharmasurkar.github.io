@@ -26,6 +26,12 @@ about:
       Lab. I borrow sensing strategies from nature — the aye-aye's tap, a
       lizard's climb, an octopus's grip — and turn them into robots that
       inspect structures without cutting them open.
+    - >
+      Hands-on across the full stack — sensor and hardware integration,
+      force-feedback control, signal processing, simulation, and field data
+      collection — bringing contact acoustic, ultrasonic, and thermal
+      inspection to mobile robotic platforms. This work spans 6 peer-reviewed
+      journal articles, 11 conference papers, and a U.S. provisional patent.
 
 # ---- Build settings ----
 url: ""

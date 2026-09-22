@@ -1,16 +1,16 @@
 # Skill groups. Each group has a heading and a list of items (chips).
 
 - heading: Programming
-  items: [Python, C++, C, Java, MATLAB]
+  items: [Python, C++, C, Java, MATLAB, PyQt5]
 
 - heading: Robotics & Control
-  items: [UR5 / RTDE, PID Control, Motion Capture, Force Control, AprilTag, ROS]
+  items: [UR5e / RTDE, DYNAMIXEL, PID Control, Motion Capture, Force Control, AprilTag, ROS 2]
 
 - heading: NDE & Sensing
-  items: [Ultrasonic Testing, EMAT, Air-Coupled Transducers, Thermal Imaging, Acoustic Analysis]
+  items: [Ultrasonic Testing, EMAT, Air-Coupled Transducers, Sonatest Wave, Infrared Thermography, Acoustic Analysis, Microphone Arrays, ZED Stereo Vision, Ouster LiDAR, Load Cells]
 
 - heading: Design & Electronics
-  items: [Fusion 360, SolidWorks, EagleCAD / KiCAD, ExpressPCB, Arduino IDE]
+  items: [Fusion 360, SolidWorks, EagleCAD / KiCAD, ExpressPCB, Arduino IDE, ESP32, PDMS / Silicone Molding]
 
 - heading: Cloud & IoT
   items: [AWS IoT Core, Amazon EC2, Kinesis Streams, MQTT, YOLO / MOT]

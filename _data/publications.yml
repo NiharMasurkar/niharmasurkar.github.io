@@ -2,6 +2,16 @@
 # To add one, copy a block under the right list.
 
 journals:
+  - venue: 2026 · SciRep
+    title: "Aye-Aye Percussive Foraging Integrates Frictional Gliding and Percussive Tapping: Kinematic and Acoustic Evidence"
+    authors: Masurkar, N., Nemati, H., & Dehghan-Niri, E. — Scientific Reports, under review
+    doi: ""
+
+  - venue: 2026 · SciRep
+    title: "Listening Beyond Limits: High-Resolution Insights into Woolly Bat (Kerivoula hardwickii) Calls via Next-Generation Wildlife Acoustic Sensing"
+    authors: Dehghan-Niri, E., Nasr, M., Masurkar, N., Azmi, M. A. I., Baharom, N. I. M., Khairi, M. D. H. M., Sien, V. L., Azmi, A. H. M., Khan, F. A. A., & Müller, R. — Scientific Reports, under review
+    doi: ""
+
   - venue: 2025 · IJP
     title: Investigating Acoustic-based Foraging Behavior in Aye-ayes (Daubentonia madagascariensis) Through Infrared Thermography
     authors: Nemati, H., Masurkar, N., & Dehghan-Niri, E. — International Journal of Primatology, 46(3), 763–784
@@ -33,6 +43,41 @@ journals:
     doi: https://doi.org/10.32548/2021.me-04223
 
 conferences:
+  - venue: 2027 · ICRA
+    title: Bio-Inspired Tap-Glide Robotic Testing
+    authors: Masurkar, N., & Dehghan-Niri, E. — IEEE Int. Conf. on Robotics and Automation (ICRA), under review
+    doi: ""
+
+  - venue: 2027 · ICRA
+    title: Intermittently Actuated, Bio-Inspired Suction Cups for Contact-Based Robotic Inspection
+    authors: Kurakalva, V., Marvi, H., Dehghan-Niri, E., Layos, N., Kabir, A., & Masurkar, N. — IEEE Int. Conf. on Robotics and Automation (ICRA), under review
+    doi: ""
+
+  - venue: 2026 · CEECT
+    title: Automated Ultrasonic Testing Using a Robotic Manipulator with Force-Feedback Assessment of Probe Coupling Quality
+    authors: Masurkar, N., Sandys, G., & Dehghan-Niri, E. — 8th Int. Conf. on Electrical Engineering and Control Technologies (CEECT), Bangkok, Thailand, Dec 17–20
+    doi: ""
+
+  - venue: 2026 · ICCAS
+    title: Laying the Foundations for Bioinspired Active Acoustic Sensing in Gas Leak Localization
+    authors: Dehghan-Niri, E., Nasr, M., Nemati, H., Masurkar, N., & Haghighesnas-Jaryani, M. — 26th Int. Conf. on Control, Automation and Systems (ICCAS), Sapporo, Japan
+    doi: ""
+
+  - venue: 2026 · ASNT
+    title: "RoboScan: A Robotic Framework for Autonomous Ultrasonic Testing for Thickness Measurement"
+    authors: Sandys, G., Masurkar, N., & Dehghan-Niri, E. — ASNT Research Symposium, Salt Lake City, UT
+    doi: ""
+
+  - venue: 2025 · ICACR
+    title: "Aye-Aye Inspired Acoustic Sensing for Robotic Tap-Testing: From Auditory Morphology to Bioinspired Sensor Design"
+    authors: Nemati, H., Masurkar, N., & Dehghan-Niri, E. — 9th Int. Conf. on Automation, Control and Robotics (ICACR), Xi'an, China, Nov 28–30
+    doi: ""
+
+  - venue: 2025 · ASNT
+    title: Gas Leakage Localization Through Bio-Inspired Motion Strategy on Robotic Platforms
+    authors: Nasr, M., Masurkar, N., Meshkizadeh, P., & Dehghan-Niri, E. — ASNT Research Symposium, Indianapolis, IN
+    doi: ""
+
   - venue: 2024 · ROBIO
     title: Overcoming Challenges in the Biomimetic Study of Termite Drumming Behavior
     authors: Dehghan-Niri, E., Masurkar, N., Nemati, H., Goode, Z., Halliday, H. S., & Liebig, J. — 2024 IEEE Int. Conf. on Robotics and Biomimetics (ROBIO), Bangkok, Thailand, pp. 172–177

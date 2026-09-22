@@ -35,11 +35,25 @@
   title: Two journal papers
   body: Aye-aye infrared thermography (Int. J. Primatology) · robotic gas-leak localization (Materials Evaluation)
 
+- year: 2025
+  tap: true
+  title: Duke Lemur Center field study
+  body: Synchronized high-speed IR thermography and acoustic recording across six aye-ayes · identified frictional gliding as a foraging mode
+
+- year: 2025
+  tap: true
+  title: U.S. provisional patent filed
+  body: Bio-inspired rub and friction mechanisms for acoustic and vibro-acoustic NDE
+
 - year: 2026
   tap: true
   title: Advanced to Ph.D. Candidate
   body: Presented aye-aye-inspired robotic tap-testing methods · passed comprehensive exam
 
 - year: 2026
-  title: ASNT Research Symposium
-  body: Presenting robotic ultrasonic testing work
+  title: RoboScan and force-feedback UT
+  body: Robotic ultrasonic testing framework and probe-coupling force control presented at ASNT and CEECT
+
+- year: 2026
+  title: Two papers under review — Scientific Reports
+  body: Aye-aye frictional gliding kinematics · woolly bat acoustic sensing in Malaysia
