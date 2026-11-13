@@ -1,5 +1,6 @@
 # Visual-resume timeline. Set "tap: true" to mark a milestone in amber
 # (a bio-inspired idea becoming hardware or a paper). Otherwise teal.
+# Keep entries oldest first; the page shows them newest first.
 
 - year: 2019
   tap: true
@@ -55,5 +56,6 @@
   body: Robotic ultrasonic testing framework and probe-coupling force control presented at ASNT and CEECT
 
 - year: 2026
-  title: Two papers under review — Scientific Reports
-  body: Aye-aye frictional gliding kinematics · woolly bat acoustic sensing in Malaysia
+  tap: true
+  title: Scientific Reports paper accepted
+  body: Aye-aye frictional gliding and percussive tapping, in print · woolly bat acoustic sensing under review

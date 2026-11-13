@@ -40,12 +40,12 @@
   function draw(time){
     bg();
     const grad = ctx.createLinearGradient(0,0,W,0);
-    grad.addColorStop(0,'#F2A65A');
-    grad.addColorStop(0.5,'#45C8B8');
-    grad.addColorStop(1,'#45C8B8');
+    grad.addColorStop(0,'#F78104');
+    grad.addColorStop(0.5,'#249EA0');
+    grad.addColorStop(1,'#249EA0');
     ctx.strokeStyle = grad;
     ctx.lineWidth = 2;
-    ctx.shadowColor = 'rgba(69,200,184,0.5)';
+    ctx.shadowColor = 'rgba(36,158,160,0.5)';
     ctx.shadowBlur = 8;
     ctx.beginPath();
     const steps = Math.max(120, Math.floor(W));
@@ -114,28 +114,66 @@
   const elResults = document.getElementById('modalResults');
   let lastFocus = null;
 
-  function buildMedia(card){
-    elMedia.innerHTML = '';
-    const src = card.getAttribute('data-media');
-    const type = card.getAttribute('data-media-type');
-    const poster = card.getAttribute('data-poster');
-    if(src && src.trim() !== ''){
-      if(type === 'video'){
-        const v = document.createElement('video');
-        v.controls = true; v.playsInline = true; v.autoplay = true; v.muted = true; v.loop = true;
-        if(poster && poster.trim() !== '') v.poster = poster;
-        const s = document.createElement('source'); s.src = src; v.appendChild(s);
-        elMedia.appendChild(v);
-      } else {
-        const img = document.createElement('img');
-        img.src = src; img.alt = card.getAttribute('data-title') || '';
-        elMedia.appendChild(img);
+  const elThumbs = document.getElementById('modalThumbs');
+  const elCaption = document.getElementById('modalCaption');
+
+  function galleryItems(card){
+    let items = [];
+    try{ items = JSON.parse(card.getAttribute('data-gallery') || '[]') || []; }catch(e){ items = []; }
+    if(!items.length){
+      const src = card.getAttribute('data-media');
+      if(src && src.trim() !== ''){
+        items = [{src: src, type: card.getAttribute('data-media-type'), poster: card.getAttribute('data-poster')}];
       }
-      elMedia.classList.remove('empty');
+    }
+    return items;
+  }
+
+  function showItem(item, title){
+    elMedia.innerHTML = '';
+    if(item.type === 'video'){
+      const v = document.createElement('video');
+      v.controls = true; v.playsInline = true; v.autoplay = true; v.muted = true; v.loop = true;
+      if(item.poster && item.poster.trim() !== '') v.poster = item.poster;
+      const s = document.createElement('source'); s.src = item.src; v.appendChild(s);
+      elMedia.appendChild(v);
     } else {
+      const img = document.createElement('img');
+      img.src = item.src; img.alt = item.caption || title;
+      elMedia.appendChild(img);
+    }
+    elCaption.textContent = item.caption || '';
+  }
+
+  function buildMedia(card){
+    const title = card.getAttribute('data-title') || '';
+    const items = galleryItems(card);
+    elThumbs.innerHTML = '';
+    elCaption.textContent = '';
+    if(!items.length){
       elMedia.classList.add('empty');
       elMedia.innerHTML = '<div class="media-placeholder big"><span>media coming soon</span></div>';
+      return;
     }
+    elMedia.classList.remove('empty');
+    showItem(items[0], title);
+    if(items.length < 2) return;
+    items.forEach((item, i)=>{
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = (item.type === 'video' ? 'vid' : '') + (i === 0 ? ' on' : '');
+      b.setAttribute('aria-label', item.caption || (title + ' media ' + (i + 1)));
+      const t = document.createElement('img');
+      t.src = item.type === 'video' ? (item.poster || '') : item.src;
+      t.alt = '';
+      b.appendChild(t);
+      b.addEventListener('click', ()=>{
+        elThumbs.querySelectorAll('button').forEach(x=>x.classList.remove('on'));
+        b.classList.add('on');
+        showItem(item, title);
+      });
+      elThumbs.appendChild(b);
+    });
   }
 
   function open(card){
@@ -161,6 +199,11 @@
   }
 
   document.querySelectorAll('#projGrid .card').forEach(card=>{
+    const preview = card.querySelector('.card-media video');
+    if(preview){
+      card.addEventListener('mouseenter', ()=>{ const p = preview.play(); if(p) p.catch(()=>{}); });
+      card.addEventListener('mouseleave', ()=>preview.pause());
+    }
     card.addEventListener('click', ()=>open(card));
     card.addEventListener('keydown', e=>{
       if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); open(card); }

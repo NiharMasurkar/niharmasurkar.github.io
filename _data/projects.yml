@@ -32,7 +32,7 @@
     real-time measure of coupling quality, presented at CEECT 2026 and the
     2026 ASNT Research Symposium.
   chips: [UR5e, Ultrasonic Testing, PID Force Control, Digital Twin]
-  media: ""
+  media: /assets/media/projects/ut-cell.jpg
   media_type: image
 
 - tagline: Bio-Inspired Sensing
@@ -57,8 +57,20 @@
     for sub-surface flaw and delamination detection, underlying a filed U.S.
     provisional patent.
   chips: [Force Control, Infrared Thermography, Kinematics, Acoustics]
-  media: ""
+  media: /assets/media/projects/tap-glide-thermal.jpg
   media_type: image
+  gallery:
+    - src: /assets/media/projects/tap-glide-thermal.jpg
+      type: image
+      caption: Aye-aye tapping, infrared thermography
+    - src: /assets/media/projects/tap-glide-finger-robot.mp4
+      type: video
+      poster: /assets/media/projects/tap-glide-finger-robot.jpg
+      caption: Two-link robotic finger tapping a wood panel
+    - src: /assets/media/projects/tap-glide-frictional-thermal.mp4
+      type: video
+      poster: /assets/media/projects/tap-glide-frictional-thermal.jpg
+      caption: Frictional gliding, close-up thermal view
 
 - tagline: Bio-Inspired Sensing
   year: 2024—now
@@ -80,27 +92,7 @@
     A robotic leak-localization pipeline published in Materials Evaluation and
     presented at ASNT, with bio-inspired active sensing work at ICCAS 2026.
   chips: [Microphone Array, Motion Planning, Acoustics, Bio-Inspired Sensing]
-  media: ""
-  media_type: image
-
-- tagline: Soft Robotics
-  year: 2021
-  title: Octopus-Inspired Robotic Gripper
-  lab: Bio-Inspired Robotics, ASU
-  body: >
-    A soft modular gripper inspired by elephant trunks and octopus tentacles.
-    A two-finger 200 mm prototype held 45 N in pull-off testing and achieved
-    full 360° curling with minimal contact area.
-  description: >
-    Engineered a soft pneumatic modular gripper inspired by elephant trunks and
-    octopus tentacles, prioritizing efficient grasping with minimal contact
-    area. Programmed a pneumatic controller for the silicone arms with central
-    air channels.
-  results: >
-    A two-finger 200 mm gripper that held 45 N in maximum pull-off testing and
-    achieved a full 360° curl.
-  chips: [Silicone, Pneumatics, Grasping]
-  media: ""
+  media: /assets/media/projects/gas-leak-quadruped.jpg
   media_type: image
 
 - tagline: Friction-Based Mobility
@@ -123,28 +115,50 @@
     Journal of Intelligent Robotics and Applications, with ASU MORE funding and
     W. L. Gore & Associates sponsorship.
   chips: [PID Control, PDMS, Load Cell, Published]
-  media: ""
-  media_type: image
+  media: /assets/media/projects/lizard-pipe-traverse-loop.mp4
+  media_type: video
+  poster: /assets/media/projects/lizard-pipe-traverse.jpg
+  gallery:
+    - src: /assets/media/projects/lizard-pipe-traverse.mp4
+      type: video
+      poster: /assets/media/projects/lizard-pipe-traverse.jpg
+      caption: Robot traversing a horizontal pipe, real time
+    - src: /assets/media/projects/lizard-horizontal-pipe.jpg
+      type: image
+      caption: Robot gripping a horizontal pipe
+    - src: /assets/media/projects/lizard-vertical-pipe.jpg
+      type: image
+      caption: Robot on a vertical pipe with a flange
+    - src: /assets/media/projects/lizard-gripper-modules.jpg
+      type: image
+      caption: Gripper modules with friction pads
 
-- tagline: Mobile Robotics
+- tagline: Soft Robotics
   year: Course Project
-  title: TurtleBot 4 Object Detection and Path Following
-  lab: ASU Course Project
+  title: Octopus-Inspired Robotic Gripper
+  lab: ASU Course Project · 2021
   body: >
-    A TurtleBot 4 on ROS 2 Humble that detects objects in its onboard camera
-    stream and drives itself along a target path using closed-loop feedback.
+    A soft modular gripper inspired by elephant trunks and octopus tentacles.
+    A two-finger 200 mm prototype held 45 N in pull-off testing and achieved
+    full 360° curling with minimal contact area.
   description: >
-    Set up a TurtleBot 4 (Create 3 base, Raspberry Pi) on ROS 2 Humble and
-    Ubuntu 22.04, including DDS middleware and multi-machine network
-    discovery. Developed ROS 2 Python nodes that detect objects in the
-    onboard camera stream and drive the robot along a target path using
-    closed-loop feedback.
+    Engineered a soft pneumatic modular gripper inspired by elephant trunks and
+    octopus tentacles, prioritizing efficient grasping with minimal contact
+    area. Programmed a pneumatic controller for the silicone arms with central
+    air channels.
   results: >
-    A working ROS 2 perception-and-control pipeline for autonomous path
-    following on a mobile robot platform.
-  chips: [ROS 2, Object Detection, Closed-Loop Control]
-  media: ""
+    A two-finger 200 mm gripper that held 45 N in maximum pull-off testing and
+    achieved a full 360° curl.
+  chips: [Silicone, Pneumatics, Grasping]
+  media: /assets/media/projects/octopus-payload.jpg
   media_type: image
+  gallery:
+    - src: /assets/media/projects/octopus-payload.jpg
+      type: image
+      caption: Gripper lifting a shop vacuum
+    - src: /assets/media/projects/octopus-finger.jpg
+      type: image
+      caption: Single silicone finger on a calibration board
 
 - tagline: Bio-Inspired Mechanisms
   year: Course Project
@@ -166,5 +180,14 @@
     A fabricated foldable-laminate bipedal walker whose measured gait
     trajectories matched the MuJoCo simulation.
   chips: [MuJoCo, Kinematics, Foldable Laminate, Arduino]
-  media: ""
-  media_type: image
+  media: /assets/media/projects/bipedal-walk.mp4
+  media_type: video
+  poster: /assets/media/projects/bipedal-walk.jpg
+  gallery:
+    - src: /assets/media/projects/bipedal-walk.mp4
+      type: video
+      poster: /assets/media/projects/bipedal-walk.jpg
+      caption: Final walker with the optimized end-effector link length
+    - src: /assets/media/projects/bipedal-sim-vs-experiment.jpg
+      type: image
+      caption: End-effector trajectory, simulation vs. experiment

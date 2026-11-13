@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4000", "--directory", "C:/Users/nihar/AppData/Local/Temp/claude/20bcece707abae66/a8c5f2a5-f912-4361-8319-bc6257f2e8f8/scratchpad/jekyll/_site"],
+      "port": 4000
+    }
+  ]
+}

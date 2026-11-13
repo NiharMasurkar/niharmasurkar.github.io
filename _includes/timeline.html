@@ -6,7 +6,8 @@
       <p>Teal marks research and study; amber marks the milestones where a bio-inspired idea became hardware or a publication.</p>
     </div>
     <div class="timeline" id="timeline">
-      {% for row in site.data.timeline %}
+      {% assign rows = site.data.timeline | reverse %}
+      {% for row in rows %}
       <div class="tl-row{% if row.tap %} tap{% endif %}">
         <div class="tl-year">{{ row.year }}</div>
         <div class="tl-body">

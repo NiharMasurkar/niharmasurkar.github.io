@@ -16,6 +16,7 @@
         data-media="{{ p.media | relative_url }}"
         data-media-type="{{ p.media_type }}"
         data-poster="{{ p.poster | relative_url }}"
+        data-gallery="{{ p.gallery | jsonify | escape }}"
         tabindex="0" role="button" aria-label="Open {{ p.title | escape }}">
         <div class="card-media">
           {% if p.media and p.media != "" %}
@@ -59,6 +60,8 @@
     <div class="modal-panel" role="document">
       <button class="modal-close" data-close aria-label="Close">&times;</button>
       <div class="modal-media" id="modalMedia"></div>
+      <p class="modal-caption" id="modalCaption"></p>
+      <div class="modal-thumbs" id="modalThumbs"></div>
       <div class="modal-content">
         <span class="tagline" id="modalLab"></span>
         <h3 id="modalTitle"></h3>
