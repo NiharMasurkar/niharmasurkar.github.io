@@ -1,4 +1,4 @@
-# Publications, split into Journals and Conferences. Newest first.
+# Publications, split into Journals, Conferences and Patents. Newest first.
 # To add one, copy a block under the right list.
 
 journals:
@@ -111,4 +111,10 @@ conferences:
   - venue: 2021 · ASNT
     title: Toward Automated Ultrasonic Inspection of Pipelines and Tubular Components
     authors: Nemati, H., Alvidrez, F., Das, A., Masurkar, N., Rudraboina, M., Marvi, H., & Dehghan-Niri, E. — ASNT Research Symposium, Virtual, March 2021
+    doi: ""
+
+patents:
+  - venue: 2025 · US
+    title: Systems and Methods for Bio-Inspired Rub and Friction Mechanisms for Acoustic and Vibro-Acoustic Non-destructive Testing and Evaluation
+    authors: Masurkar, N., & Dehghan-Niri, E. — U.S. Provisional Patent Application 63/875,171, filed Sep. 3, 2025
     doi: ""

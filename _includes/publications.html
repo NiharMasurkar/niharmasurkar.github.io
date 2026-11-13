@@ -6,8 +6,12 @@
       <p>Spanning biomimetic robotics, nondestructive evaluation, and animal behavior.</p>
     </div>
 
-    <h3 class="pub-group">Journals</h3>
-    {% for pub in site.data.publications.journals %}
+    {% assign groups = "journals,conferences,patents" | split: "," %}
+    {% for group in groups %}
+    {% assign pubs = site.data.publications[group] %}
+    {% if pubs and pubs.size > 0 %}
+    <h3 class="pub-group">{{ group | capitalize }}</h3>
+    {% for pub in pubs %}
     {% if pub.doi and pub.doi != "" %}
     <a class="pub" href="{{ pub.doi }}" target="_blank" rel="noopener">
     {% else %}
@@ -21,21 +25,7 @@
       {% if pub.doi and pub.doi != "" %}<span class="doi">DOI ↗</span>{% else %}<span class="doi doi-off">—</span>{% endif %}
     {% if pub.doi and pub.doi != "" %}</a>{% else %}</div>{% endif %}
     {% endfor %}
-
-    <h3 class="pub-group">Conferences</h3>
-    {% for pub in site.data.publications.conferences %}
-    {% if pub.doi and pub.doi != "" %}
-    <a class="pub" href="{{ pub.doi }}" target="_blank" rel="noopener">
-    {% else %}
-    <div class="pub pub-nolink">
     {% endif %}
-      <span class="venue">{{ pub.venue }}</span>
-      <span>
-        <span class="ptitle">{{ pub.title }}</span>
-        <span class="authors">{{ pub.authors }}</span>
-      </span>
-      {% if pub.doi and pub.doi != "" %}<span class="doi">DOI ↗</span>{% else %}<span class="doi doi-off">—</span>{% endif %}
-    {% if pub.doi and pub.doi != "" %}</a>{% else %}</div>{% endif %}
     {% endfor %}
   </div>
 </section>
